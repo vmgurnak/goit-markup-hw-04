@@ -286,6 +286,7 @@ body {
 
   height: 112px;
   background-color: var(--cloud);
+  border-radius: 4px;
   margin-bottom: 8px;
 }
 
@@ -429,7 +430,7 @@ body {
 }
 .customers-title {
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -450,14 +451,22 @@ body {
   justify-content: center;
   align-items: center;
 
+  color: var(--late-slate);
+
   width: 168px;
   height: 88px;
 
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--late-slate);
   border-radius: 4px;
 }
-.customer-icon {
-  fill: var(--late-slate);
+
+.customer-item-link:hover,
+.customer-item-link:focus {
+  border-color: var(--ocean);
+}
+
+.customer-item-link .customer-icon {
+  fill: currentColor;
 }
 
 .customer-icon:hover,
@@ -563,11 +572,13 @@ body {
 }
 
 .portfolio-link {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-link:hover,
 portfolio-link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-btn {
@@ -611,6 +622,13 @@ portfolio-link:focus {
   border-right: 1px solid var(--cornflower);
   border-bottom: 1px solid var(--cornflower);
   border-left: 1px solid var(--cornflower);
+}
+
+.portfolio-completed:hover,
+.portfolio-completed:focus {
+  border-right: 1px solid var(--cloud);
+  border-bottom: 1px solid var(--cloud);
+  border-left: 1px solid var(--cloud);
 }
 
 .portfolio-subtitle {

@@ -462,17 +462,18 @@ body {
 
 .customer-item-link:hover,
 .customer-item-link:focus {
+  color: var(--ocean);
   border-color: var(--ocean);
 }
 
-.customer-item-link .customer-icon {
+.customer-icon {
   fill: currentColor;
 }
 
-.customer-icon:hover,
+/* .customer-icon:hover,
 .customer-icon:focus {
   fill: var(--ocean);
-}
+} */
 
 /* ----------------FOOTER--------------- */
 
@@ -576,7 +577,7 @@ body {
 }
 
 .portfolio-link:hover,
-portfolio-link:focus {
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
